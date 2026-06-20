@@ -212,10 +212,10 @@ cd frontend
 vercel --prod
 ```
 
-### Backend → Railway
+### Backend → Render
 ```bash
 cd backend
-railway up
+render up
 ```
 
 Set the following environment variables in Railway/Vercel dashboards (never commit secrets!).
