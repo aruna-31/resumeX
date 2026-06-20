@@ -1,0 +1,81 @@
+# ─── Dependencies ────────────────────────────────────────────
+node_modules/
+.pnp
+.pnp.js
+
+# ─── Build Outputs ────────────────────────────────────────────
+dist/
+build/
+out/
+
+# ─── Environment Variables (NEVER COMMIT THESE) ───────────────
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+backend/.env
+frontend/.env
+
+# ─── Firebase Service Account Keys (CRITICAL SECRET) ──────────
+*-firebase-adminsdk-*.json
+firebase-service-account*.json
+serviceAccount*.json
+serviceAccountKey*.json
+
+# ─── Logs ────────────────────────────────────────────────────
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+analysis_log*.txt
+models_log.txt
+lint_*.txt
+lint_output.txt
+lint_report*.txt
+
+# ─── Runtime ─────────────────────────────────────────────────
+pids
+*.pid
+*.seed
+*.pid.lock
+
+# ─── Coverage ────────────────────────────────────────────────
+coverage/
+.nyc_output
+
+# ─── Cache ───────────────────────────────────────────────────
+.eslintcache
+.cache/
+*.tsbuildinfo
+
+# ─── OS Files ────────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ─── Editor ──────────────────────────────────────────────────
+.vscode/settings.json
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# ─── Uploads (use Firebase Storage instead) ──────────────────
+backend/uploads/
+uploads/
+
+# ─── Test / Debug files ──────────────────────────────────────
+backend/test-*.ts
+backend/test-*.js
+backend/smoke-test.js
+backend/analysis_log*.txt
+backend/models_log.txt
+
+# ─── Sequelize (being removed) ───────────────────────────────
+backend/.sequelizerc
+
+# ─── Docker sensitive ─────────────────────────────────────────
+docker-compose.override.yml

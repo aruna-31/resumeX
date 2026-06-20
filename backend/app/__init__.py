@@ -1,0 +1,1 @@
+"""ResumeX FastAPI backend package."""

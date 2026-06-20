@@ -1,0 +1,10 @@
+**/node_modules
+**/dist
+**/build
+.git
+.github
+.env
+.env.local
+.env.production
+.env.development
+.env.staging

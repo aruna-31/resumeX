@@ -1,0 +1,15 @@
+rules_version = '2';
+service firebase.storage {
+  match /b/{bucket}/o {
+    match /resumes/{userId}/{allPaths=**} {
+      // Allow users to upload and read their own resumes
+      allow read, write: if request.auth != null && request.auth.uid == userId;
+    }
+    
+    // HR/Admin access (optional: add custom claims logic here later)
+    match /jobs/{jobId}/{allPaths=**} {
+      allow read: if request.auth != null;
+      allow write: if request.auth != null && (request.auth.token.role == 'HR' || request.auth.token.role == 'ADMIN');
+    }
+  }
+}
